@@ -3,22 +3,17 @@ body {
     font-family: 'Arial', sans-serif;
     color: white;
     background-color: #1a1a1a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: transparent;
     padding: 20px 0;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -38,12 +33,19 @@ body {
     font-size: 16px;
 }
 
+.navbar ul li a span {
+    color: #f39c12;
+    font-weight: bold;
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 1;
+    height: 100vh;
+    text-align: center;
+    padding-top: 80px;
 }
 
 .main-content h1 {
@@ -54,4 +56,39 @@ body {
 .main-content p {
     font-size: 1.5rem;
     margin: 10px 0 0 0;
+}
+
+.section {
+    padding: 80px 20px;
+    background-color: #2c2c2c;
+    text-align: center;
+}
+
+.expertise-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.expertise-box {
+    background-color: #333;
+    padding: 20px;
+    border: 1px solid #444;
+    width: 30%;
+    min-width: 250px;
+}
+
+.expertise-box h3 {
+    margin-top: 0;
+    color: #f39c12;
+}
+
+.expertise-box p {
+    color: white;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
