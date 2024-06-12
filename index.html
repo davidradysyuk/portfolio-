@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Flexbox Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div>
-    
-        <h1>Hello David/h1>
-        <p>My first PHP page</p>
-        
-        <?php
-            echo "Hello David!";
-        ?>
+    <div class="header">
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <h1>Website Header</h1>
+    </div>
+    <div class="content">
+        <h2>Welcome to the Simple Flexbox Website</h2>
+        <p>This is a basic example of a website layout using flexbox with a header and a dropdown menu.</p>
+    </div>
 </body>
 </html>
